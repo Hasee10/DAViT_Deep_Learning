@@ -1,0 +1,25 @@
+04/01/2026 08:57:26 - WARNING - __main__ -   device: cpu, n_gpu: 0
+04/01/2026 08:57:27 - INFO - httpx -   HTTP Request: HEAD https://huggingface.co/facebook/dinov2-large/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+04/01/2026 08:57:27 - INFO - httpx -   HTTP Request: HEAD https://huggingface.co/facebook/dinov2-large/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+04/01/2026 08:57:27 - WARNING - huggingface_hub.utils._http -   Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+04/01/2026 08:57:27 - INFO - httpx -   HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-large/47b73eefe95e8d44ec3623f8890bd894b6ea2d6c/preprocessor_config.json "HTTP/1.1 200 OK"
+04/01/2026 08:57:28 - INFO - httpx -   HTTP Request: HEAD https://huggingface.co/facebook/dinov2-large/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+04/01/2026 08:57:28 - INFO - httpx -   HTTP Request: HEAD https://huggingface.co/facebook/dinov2-large/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+04/01/2026 08:57:28 - INFO - httpx -   HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-large/47b73eefe95e8d44ec3623f8890bd894b6ea2d6c/preprocessor_config.json "HTTP/1.1 200 OK"
+04/01/2026 08:57:28 - INFO - httpx -   HTTP Request: HEAD https://huggingface.co/facebook/dinov2-large/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+04/01/2026 08:57:28 - INFO - httpx -   HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/facebook/dinov2-large/47b73eefe95e8d44ec3623f8890bd894b6ea2d6c/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/439 [00:00<?, ?it/s]Loading weights:  64%|######4   | 282/439 [00:00<00:00, 2818.68it/s]Loading weights: 100%|##########| 439/439 [00:00<00:00, 3482.35it/s]
+04/01/2026 08:57:43 - INFO - __main__ -   Training/evaluation parameters Namespace(train_data_file='../data/chest_xray/train', eval_data_file='../data/chest_xray/val', test_data_file='../data/chest_xray/test', pretrain_language='', output_dir='./saved_models', model_type='roberta', encoder_block_size=512, max_line_length=64, model_name='davit_pneumonia_type.bin', checkpoint_model_name='non_domain_model.bin', model_name_or_path='facebook/dinov2-large', config_name='', feature_processor_name='', do_train=False, do_test=True, evaluate_during_training=True, train_batch_size=32, eval_batch_size=32, gradient_accumulation_steps=1, learning_rate=1e-05, weight_decay=0.0, adam_epsilon=1e-08, max_grad_norm=1.0, max_steps=-1, warmup_steps=0, seed=123456, epochs=30, classify_pneumonia_type=True, n_gpu=0, device=device(type='cpu'))
+04/01/2026 08:57:47 - INFO - __main__ -   loading image paths for pneumonia type classification
+04/01/2026 08:57:47 - INFO - __main__ -   ***** Running evaluation *****
+04/01/2026 08:57:47 - INFO - __main__ -     Num examples = 390
+04/01/2026 08:57:47 - INFO - __main__ -     Batch size = 32
+  0%|          | 0/13 [00:00<?, ?it/s]  8%|7         | 1/13 [01:16<15:21, 76.81s/it] 15%|#5        | 2/13 [02:33<14:04, 76.74s/it] 23%|##3       | 3/13 [03:49<12:45, 76.53s/it] 31%|###       | 4/13 [05:05<11:26, 76.32s/it] 38%|###8      | 5/13 [06:22<10:11, 76.40s/it] 46%|####6     | 6/13 [07:39<08:57, 76.75s/it] 54%|#####3    | 7/13 [08:56<07:41, 76.85s/it] 62%|######1   | 8/13 [10:12<06:23, 76.61s/it] 69%|######9   | 9/13 [11:28<05:05, 76.34s/it] 77%|#######6  | 10/13 [12:44<03:48, 76.26s/it] 85%|########4 | 11/13 [14:00<02:32, 76.14s/it] 92%|#########2| 12/13 [15:16<01:16, 76.02s/it]100%|##########| 13/13 [15:30<00:00, 57.38s/it]100%|##########| 13/13 [15:30<00:00, 71.60s/it]
+04/01/2026 09:13:18 - INFO - __main__ -   ***** Test results *****
+04/01/2026 09:13:18 - INFO - __main__ -   f1: 0.8047808764940239
+04/01/2026 09:13:18 - INFO - __main__ -   precision: 0.9805825242718447
+04/01/2026 09:13:18 - INFO - __main__ -   recall: 0.6824324324324325
+04/01/2026 09:13:18 - INFO - __main__ -   specificity: 0.9917355371900827
+04/01/2026 09:13:18 - INFO - __main__ -   Acc: 0.8743589743589744
+04/01/2026 09:13:18 - INFO - __main__ -   AUC: 0.8370839848112576
