@@ -1,0 +1,15 @@
+***** Cross-Domain Test Results *****
+  f1:          0.6850
+  precision:   0.7969
+  recall:      0.6006
+  specificity: 0.9143
+  Acc:         0.8017
+  AUC:         0.7575
+  TP=934  FP=238  FN=621  TN=2539
+  n_total=4332
+
+Dataset: CoronaHack Chest X-Ray (BACTERIA=2777, VIRUS=1555)
+Model: DAViT (davit_pneumonia_type.bin) - pretrained on Kaggle Chest X-Ray
+Evaluation date: 2026-04-25
+Hardware: CPU only, batch size 4
+Runtime: ~2h 26min

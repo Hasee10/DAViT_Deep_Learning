@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pandoc \"Assignment3_CrossDomain_DAViT.docx\" -t markdown)",
+      "Bash(where pandoc *)",
+      "Bash(python -c \"from docx import Document; doc = Document\\('C:/Users/Administrator/Downloads/Asst#3_DL/Assignment3_CrossDomain_DAViT.docx'\\); [print\\(p.text\\) for p in doc.paragraphs]\")",
+      "Bash(pip show *)"
+    ]
+  }
+}
